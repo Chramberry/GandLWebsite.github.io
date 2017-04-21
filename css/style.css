@@ -196,7 +196,7 @@ footer {
 -----------------------------------------*/
 .custom-navbar {
     margin-bottom: 0;
-    background-color: #101010;
+    background-color: #101010;  
 }
 
 .custom-navbar .navbar-brand {
@@ -252,7 +252,8 @@ footer {
         background: 0 0; 
     }
     .custom-navbar.top-nav-collapse {
-        background: #101010;
+/*        CHANGE FOR NAV BAR COLOR*/
+        background: #07A491;  
         padding: 0;
     }
 
