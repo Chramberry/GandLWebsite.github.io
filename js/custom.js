@@ -16,7 +16,6 @@ $(window).scroll(function() {
     }
 });
 
-
 /* HTML document is loaded. DOM is ready. 
 -------------------------------------------*/
 $(document).ready(function() {
@@ -47,7 +46,7 @@ $(document).ready(function() {
   -----------------------------------------------*/
   $(document).ready(function() {
     $("#owl").owlCarousel({
-      autoPlay: 6000,
+      autoPlay: 10000,
       items : 4,
       itemsDesktop : [1199,2],
       itemsDesktopSmall : [979,1],
@@ -56,8 +55,21 @@ $(document).ready(function() {
       itemsMobile : [479,1]
     });
   });
+  
+  /* Add guest
+  -----------------------------------------------*/
+jQuery(function(){
+    var counter = 1;
+    jQuery('.addguest').click(function(event){
+        event.preventDefault();
 
+        var newRow = jQuery('<tr><td><input type="text" name="guest' +
+            counter + '"/></td></tr>');
+            counter++;
+        jQuery('.guestTable').append(newRow);
 
+    });
+});
   /* Back top
   -----------------------------------------------*/
     $(window).scroll(function() {
@@ -77,6 +89,8 @@ $(document).ready(function() {
   /* wow
   -------------------------------*/
   new WOW({ mobile: false }).init();
+  
+
   
     /* List of Guests
   ------------------------*/
