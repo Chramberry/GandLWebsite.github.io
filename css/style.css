@@ -351,7 +351,7 @@ footer {
     Accommodations section              
 -----------------------------------------*/
 #Accommodations {
-    background: url('../images/GL-170darker.jpg') 50% 0 repeat-y fixed;
+    background: url('../images/GL-170darker.jpg') 50% 0 no-repeat fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -362,13 +362,17 @@ footer {
     background: #ffffff;
     padding-bottom: 22px;
 }
-
-#Accommodations p {
+#Accommodations h3 {
     color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+}
+#Accommodations p {
+    color: #707070;
 }
 
 #Accommodations .btn{
-    background: transparent;
+    background: #f2545f;;
     border: 2px solid #ffffff;
     border-radius: 0px;
     color: #ffffff;
@@ -381,10 +385,60 @@ footer {
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-#Accommodations .btn-default:hover {
-    background: #ffffff;
-    color: #333333;
-    border-color: transparent;
+
+
+#Accommodations .panel-group {
+  margin-top: 32px;
+}
+
+#Accommodations .panel-group .panel {
+  margin-bottom: 8px;
+}
+
+#Accommodations .panel-default {
+  border: none;
+}
+
+#Accommodations .panel-default>.panel-heading {
+  background: #f0f0f0;
+  color: #505050;
+}
+
+#Accommodations .panel-heading {
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 6px;
+}
+
+#Accommodations .panel-default>.panel-heading+.panel-collapse>.panel-body {
+  border-top: none;
+  padding-top: 22px;
+  padding-left: 32px;
+  padding-bottom: 22px;
+}
+
+#Accommodations .panel-heading .panel-title a[data-toggle="collapse"] {
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px;
+}
+
+#Accommodations .panel-heading .panel-title a[data-toggle="collapse"]::after {
+  content: "-";
+  display: block;
+  position: absolute;
+  line-height: 1;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#Accommodations .panel-heading .panel-title a[data-toggle="collapse"].collapsed::after {
+  content: "+";
 }
 
 
