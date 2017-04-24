@@ -30,7 +30,7 @@ CDown.prototype = {
 	format: function(r){
 		var pre='',post='',divide=', ',
 			out="";
-		if(r.d != 0){out += pre+r.d +" "+((r.d==1)?" Wedding Day":" Days Out")+post+divide;}
+		if(r.d != 0){out += pre+r.d +" "+((r.d==1)?" Wedding Day":" days to go")+post+divide;}
 
 		return out.substr(0,out.length-divide.length);
 	},
