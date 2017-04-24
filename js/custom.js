@@ -63,14 +63,12 @@ $(document).ready(function () {
         
         $("#addRow").click(function () {
             
-            var newRow = jQuery('<tr><td valign="top" ><label for="name_1'+
-                    counter + '"\n\
-                    >Guest:</label>'+
+            var newRow = jQuery(
                     '</td><tr><td><input autocomplete="off"  name="Guest' +
                     counter + '"\n\
                     id="guest' +
                     counter + '"\n\
-                    type="text" /></td></tr><tr><td><fieldset>' +
+                    type="text" placeholder="Guest" class="form-control"/></td></tr><tr><td><div class="radiobar">' +
                     '<input type="radio" id="rsvp_1'+
                     counter + '"\n\
                     " name="Food'+
@@ -91,7 +89,7 @@ $(document).ready(function () {
                     counter + '"\n\
                     value="Quiche" /><label for="rsvp_3'+
                     counter + '"\n\
-                    ">Quiche</label></fieldset></td></tr>');
+                    ">Quiche</label></div></td></tr>');
                      
             counter++;
            
