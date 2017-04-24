@@ -121,30 +121,11 @@ $(document).ready(function () {
     /* List of Guests
      ------------------------*/
     var availableGuests = [
-        "ActionScript",
-        "AppleScript",
-        "Asp",
-        "BASIC",
-        "C",
-        "C++",
-        "Clojure",
-        "COBOL",
-        "ColdFusion",
-        "Erlang",
-        "Fortran",
-        "Groovy",
-        "Haskell",
-        "Java",
-        "JavaScript",
-        "Lisp",
-        "Perl",
-        "PHP",
-        "Python",
-        "Ruby",
-        "Scala",
-        "Scheme"
+        "John Walsh",
+        "Lauren Haley",
+        "Logan Astle"
     ];
-    $("#guests").autocomplete({
+    $("#name_1").autocomplete({
         source: availableGuests
     });
 
