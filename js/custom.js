@@ -60,39 +60,39 @@ $(document).ready(function () {
      -----------------------------------------------*/
     var counter = 1;
     $(document).ready(function () {
-        
+
         $("#addRow").click(function () {
-            
+
             var newRow = jQuery(
                     '</td><tr><td><input autocomplete="off"  name="Guest' +
                     counter + '"\n\
                     id="guest' +
                     counter + '"\n\
                     type="text" placeholder="Guest" class="form-control"/></td></tr><tr><td><div class="radiobar">' +
-                    '<input type="radio" id="rsvp_1'+
+                    '<input type="radio" id="rsvp_1' +
                     counter + '"\n\
-                    " name="Food'+
+                    " name="Food' +
                     counter + '"\n\
-                    value="Salmon" /><label for="rsvp_1'+
+                    value="Salmon" /><label for="rsvp_1' +
                     counter + '"\n\
-                    ">Salmon</label>'+         
-                    '<input type="radio" id="rsvp_2'+
+                    ">Salmon</label>' +
+                    '<input type="radio" id="rsvp_2' +
                     counter + '"\n\
-                    " name="Food'+
+                    " name="Food' +
                     counter + '"\n\
-                    value="Chicken" /><label for="rsvp_2'+
+                    value="Chicken" /><label for="rsvp_2' +
                     counter + '"\n\
-                    ">Chicken</label>'+
-                    '<input type="radio" id="rsvp_3'+
+                    ">Chicken</label>' +
+                    '<input type="radio" id="rsvp_3' +
                     counter + '"\n\
-                    " name="Food'+
+                    " name="Food' +
                     counter + '"\n\
-                    value="Quiche" /><label for="rsvp_3'+
+                    value="Quiche" /><label for="rsvp_3' +
                     counter + '"\n\
                     ">Quiche</label></div></td></tr>');
-                     
+
             counter++;
-           
+
             $("#guestTable").append(newRow);
         });
     });
