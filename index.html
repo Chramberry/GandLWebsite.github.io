@@ -545,12 +545,12 @@
                     <div class="wow fadeInUp col-md-offset-1 col-md-5 col-sm-6" data-wow-delay="0.6s">
                         <div class="contact_des">
                             <h3>Let Us Know Your Choice of Main</h3>
-                            <p>Cedar Planked Salmon</p>
-                            <p>Mushroom Chicken</p>
-                            <p>Quiche with Goat Cheese, Asparagus and Peppers</p>
+                            <p>- Cedar Planked Salmon</p>
+                            <p>- Mushroom Chicken</p>
+                            <p>- Quiche with Goat Cheese, Asparagus and Peppers</p>
 
 
-                            <h4>*Please let us know of any dietary restrictions</h4>
+                            <h4>*Please leave a message and let us know of any dietary restrictions</h4>
                         </div>
                     </div>
 
@@ -567,39 +567,33 @@
                                 <div>
                                     <table id="guestTable">
                                         <tr>
-                                            <td valign="top" >
-                                                <label for="name_1">Name:</label>
-                                            </td>
-                                        </tr>
-                                        <tr>
                                             <td>
-                                                <input autocomplete="off" id="name_1" name="Name" type="text" /><br>                                               
+                                                <input class="form-control" autocomplete="off" id="name_1" name="Name" type="text" placeholder="Name" /><br>                                               
                                             </td>
                                         </tr>
                                         <tr>
 
                                             <td>
-                                                <fieldset>
+                                                <div class="radiobar">
 
-                                                    <input type="radio" id="rsvp_1" name="Food" value="Salmon" /><label for="rsvp_1">Salmon</label>
-                                                    <input type="radio" id="rsvp_2" name="Food" value="Chicken" /><label for="rsvp_2">Chicken</label>
-                                                    <input type="radio" id="rsvp_3" name="Food" value="Quiche" /><label for="rsvp_3">Quiche</label> 
+                                                    <input  type="radio" id="rsvp_1" name="Food" value="Salmon" /><label for="rsvp_1">Salmon  </label>
+                                                    <input  type="radio" id="rsvp_2" name="Food" value="Chicken" /><label for="rsvp_2">Chicken </label>
+                                                    <input  type="radio" id="rsvp_3" name="Food" value="Quiche" /><label for="rsvp_3">Quiche </label> 
 
-                                                </fieldset>
+                                                </div>
                                             </td>
                                         </tr>
                                     </table>
 
-                                    <input type="button" id="addRow" value="Add Guest" />
+                                    <input type="button" class="form-control" id="addRow" value="Add Guest" />
                                 </div>
 
                                 <div>
-                                    <label for="email">Email:</label>
-                                    <input autocomplete="off" id="email" name="Email" type="email" />
+                                    <input autocomplete="off" class="form-control" id="email" name="Email" type="email" placeholder="Email"/>
                                 </div>
+                                <textarea name="message" rows="5" class="form-control" id="message" placeholder="Message"></textarea>
 
-
-                                <input type="submit" value="submit" />
+                                <input type="submit" class="form-control" value="submit" />
                             </form>
                         </div>
                     </div>
