@@ -63,17 +63,38 @@ $(document).ready(function () {
         
         $("#addRow").click(function () {
             
-            var newRow = jQuery('<tr><td><input autocomplete="off"  name="guest' +
+            var newRow = jQuery('<tr><td valign="top" ><label for="name_1'+
+                    counter + '"\n\
+                    >Guest:</label>'+
+                    '</td><tr><td><input autocomplete="off"  name="Guest' +
                     counter + '"\n\
                     id="guest' +
                     counter + '"\n\
-                    type="text" /></td></tr>');
-            
-            var oClone = document.getElementById("template").cloneNode(true);
-            oClone.id += (counter + "");
-            oClone.
+                    type="text" /></td></tr><tr><td><fieldset>' +
+                    '<input type="radio" id="rsvp_1'+
+                    counter + '"\n\
+                    " name="Food'+
+                    counter + '"\n\
+                    value="Salmon" /><label for="rsvp_1'+
+                    counter + '"\n\
+                    ">Salmon</label>'+         
+                    '<input type="radio" id="rsvp_2'+
+                    counter + '"\n\
+                    " name="Food'+
+                    counter + '"\n\
+                    value="Chicken" /><label for="rsvp_2'+
+                    counter + '"\n\
+                    ">Chicken</label>'+
+                    '<input type="radio" id="rsvp_3'+
+                    counter + '"\n\
+                    " name="Food'+
+                    counter + '"\n\
+                    value="Quiche" /><label for="rsvp_3'+
+                    counter + '"\n\
+                    ">Quiche</label></fieldset></td></tr>');
+                     
             counter++;
-            document.getElementById("placeholder").appendChild(oClone);          
+           
             $("#guestTable").append(newRow);
         });
     });
