@@ -83,7 +83,7 @@ footer {
 }
 
 
-#registry .btn,
+
 #thingstd .btn,
 #intro .btn,
 #rsvp .btn {
@@ -124,7 +124,6 @@ footer {
     background: #222;
 }
 
-#registry .btn-default,
 #thingstd .btn-default,
 #intro .btn-default:hover {
     background: #ffffff;
@@ -572,11 +571,14 @@ footer {
     padding-bottom: 7rem;
     color: #ffffff;
 }
+#registry h3{
+    color: #707070;
+}
 #registry img {
-    margin-top: 42px;
+    margin-bottom: 12px;
 }
 #registry .btn{
-    background: transparent;
+    background: #f2545f;;
     border: 2px solid #ffffff;
     border-radius: 0px;
     color: #ffffff;
@@ -584,15 +586,23 @@ footer {
     letter-spacing: 1px;
     font-size: 12px;
     padding: 14px 42px;
-    margin-top: 80px;
-    margin-right: 12px;
+    bottom: 20px;
+    position: absolute;
+    margin-left: -75px;  
+    left: 50%;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
+
 }
-#registry .btn-default:hover {
-    background: #ffffff;
-    color: #333333;
-    border-color: transparent;
+
+#registry .regtext{
+    background: #f9f9f9;
+    padding: 2rem;
+    float: left;
+    text-align: center;
+    line-height: 150px;
+    width: 300px; height: 280px;
+    border-radius: 10px;
 }
 
 
