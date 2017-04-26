@@ -576,6 +576,8 @@ footer {
 }
 #registry img {
     margin-bottom: 12px;
+    right: 40px;
+    position: relative;
 }
 #registry .btn{
     background: #f2545f;;
@@ -598,10 +600,11 @@ footer {
 #registry .regtext{
     background: #f9f9f9;
     padding: 2rem;
-    float: left;
+    left: -60px;
+    position: relative;
     text-align: center;
     line-height: 150px;
-    width: 300px; height: 210px;
+    width: 300px; height: 280px;
     border-radius: 10px;
 }
 
