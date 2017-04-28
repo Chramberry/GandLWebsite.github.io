@@ -121,9 +121,7 @@ $(document).ready(function () {
     /* List of Guests
      ------------------------*/
     var availableGuests = [
-        "John Walsh",
-        "Lauren Haley",
-        "Logan Astle"
+    
     ];
     $("#name_1").autocomplete({
         source: availableGuests
