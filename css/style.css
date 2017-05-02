@@ -100,6 +100,9 @@ footer {
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
+input[type=checkbox] {
+	visibility: hidden;
+}
 
 #intro .btn-danger,
 #thingstd .btn-danger,
@@ -692,6 +695,52 @@ footer {
     background-color: #f2545f;
 }
 
+#rsvp .checkboxThree {
+        margin-bottom: 20px;
+	width: 120px;
+	height: 30px;
+	background: #333;
+	border-radius: 40px;
+	position: relative;
+}
+#rsvp .checkboxThree:before {
+	content: 'Yes';
+	position: absolute;
+	top: 5px;
+	left: 13px;
+	height: 2px;
+	color: #f2545f;
+	font-size: 16px;
+}
+
+#rsvp .checkboxThree:after {
+	content: 'No';
+	position: absolute;
+	top: 5px;
+	left: 80px;
+	height: 2px;
+	color: #ffffff;
+	font-size: 16px;
+}
+
+#rsvp .checkboxThree label {
+	display: inline;
+	width: 52px;
+	height: 22px;
+	border-radius: 50px;
+	transition: all .5s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 4px;
+	z-index: 1;
+	left: 9px;
+	background: #ddd;
+}
+
+#rsvp .checkboxThree input[type=checkbox]:checked + label {
+	left: 60px;
+	background: #f2545f;
+}
 
 /*---------------------------------------
    Footer section              
@@ -718,6 +767,7 @@ footer {
     text-align: center;
     transition: all 0.4s ease-in-out;
 }
+
 
 .go-top:hover {
     background: #f2545f;
@@ -781,6 +831,11 @@ footer {
         background: #ffffff;
         padding: 10rem 3rem 10rem 5rem;
     }
+    .go-top{
+        bottom: 2em;
+        left: 2em;
+        right: 0;
+    }
 
 }
 
@@ -805,7 +860,11 @@ footer {
     #rsvp .contact_detail {
         margin-top: 82px;
     }
-
+    .go-top{
+        bottom: 2em;
+        left: 2em;
+        right: 0;
+    }
 }
 
 @media (max-width: 760px) {
@@ -813,6 +872,12 @@ footer {
     #intro {
         height: 100vh;
     }
+    .go-top{
+        bottom: 2em;
+        left: 2em;
+        right: 0;
+    }
 
 }
+
 
